@@ -5,7 +5,10 @@ public class Main {
     public static void main(String[] args) throws Exception{
 	// write your code here
         Config config = new Config();
-        config.csvWriter("url");
+        String url = config.getURL("url");
+        String data = config.getDataFromURL(url);
+        System.out.println(data);
+        config.writeDataToCSV(data);
     }
 }
 
