@@ -4,15 +4,13 @@ public class Main {
 
     static String jsonData;
     static String url;
-    static final long timeInterval = 100000;
+    private static final long TIME_INTERVAL = 60000;
 
     public static void main(String[] args) throws Exception {
-
         Config config = new Config();
         url = config.getURL("url");
         URLData urlData = new URLData();
         jsonData = urlData.getDataFromURL(url);
-        System.out.println(jsonData);
         JSONToCSVWriter jsonToCSVWriter = new JSONToCSVWriter();
         jsonToCSVWriter.getDataByKey(jsonData);
         jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
@@ -29,7 +27,7 @@ public class Main {
                     e.printStackTrace();
                 }
                 try {
-                    Thread.sleep(timeInterval);
+                    Thread.sleep(TIME_INTERVAL);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

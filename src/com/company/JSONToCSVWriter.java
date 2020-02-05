@@ -2,6 +2,8 @@ package com.company;
 import com.opencsv.CSVWriter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
+
+import java.io.File;
 import java.io.FileWriter;
 import java.util.Date;
 
@@ -24,9 +26,14 @@ public class JSONToCSVWriter {
     void writeDataFromURLToCSV(String csv) throws Exception {
         String [] urlData = {success.toString(), lowest_price, volume, median_price, java.util.Calendar.getInstance().getTime().toString()};
         String [] header = {"success", "lowest_price", "volume", "media_price", "time"};
-        CSVWriter writer = new CSVWriter(new FileWriter(csv));
-        writer.writeNext(header, false);
-        writer.writeNext(urlData, false);
-        writer.close();
+        if(new File("steamData.csv").isFile()){
+            return;
+        }
+        else {
+            CSVWriter writer = new CSVWriter(new FileWriter(csv));
+            writer.writeNext(header, false);
+            writer.writeNext(urlData, false);
+            writer.close();
+        }
     }
 }
