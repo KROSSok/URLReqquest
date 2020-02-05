@@ -11,6 +11,7 @@ public class Main {
         url = config.getURL("url");
         URLData urlData = new URLData();
         jsonData = urlData.getDataFromURL(url);
+
         JSONToCSVWriter jsonToCSVWriter = new JSONToCSVWriter();
         jsonToCSVWriter.getDataByKey(jsonData);
         jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
@@ -18,11 +19,10 @@ public class Main {
 
         Runnable runnable = () -> {
             while (true) {
-                // ------- code for task to run
                 jsonData = urlData.getDataFromURL(url);
                 try {
                     System.out.println(jsonData);
-                    csvUpdater.updateDataInCSV(Main.jsonData, "steamData.csv");
+                    csvUpdater.updateDataInCSV(jsonData, "steamData.csv");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
