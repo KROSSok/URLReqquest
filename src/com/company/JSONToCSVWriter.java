@@ -2,8 +2,9 @@ package com.company;
 import com.opencsv.CSVWriter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import java.io.File;
 import java.io.FileWriter;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 
 public class JSONToCSVWriter {
 
@@ -24,7 +25,7 @@ public class JSONToCSVWriter {
     void writeDataFromURLToCSV(String csv) throws Exception {
         String [] urlData = {success.toString(), lowest_price, volume, median_price, java.util.Calendar.getInstance().getTime().toString()};
         String [] header = {"success", "lowest_price", "volume", "media_price", "time"};
-        if(new File("steamData.csv").exists()){
+        if(Files.exists(Paths.get("steamData.csv"))){
             CSVWriter writer = new CSVWriter(new FileWriter(csv, true));
             writer.writeNext(urlData, false);
             writer.close();
