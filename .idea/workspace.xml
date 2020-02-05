@@ -6,6 +6,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/JSONToCSVWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/JSONToCSVWriter.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/JSONToCSVWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JSONToCSVWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../URLReqquest-dev" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Factorials" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
