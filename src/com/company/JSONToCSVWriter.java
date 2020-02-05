@@ -26,8 +26,10 @@ public class JSONToCSVWriter {
     void writeDataFromURLToCSV(String csv) throws Exception {
         String [] urlData = {success.toString(), lowest_price, volume, median_price, java.util.Calendar.getInstance().getTime().toString()};
         String [] header = {"success", "lowest_price", "volume", "media_price", "time"};
-        if(new File("steamData.csv").isFile()){
-            return;
+        if(new File("steamData.csv").exists()){
+            CSVWriter writer = new CSVWriter(new FileWriter(csv, true));
+            writer.writeNext(urlData, false);
+            writer.close();
         }
         else {
             CSVWriter writer = new CSVWriter(new FileWriter(csv));

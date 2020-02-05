@@ -1,5 +1,7 @@
 package com.company;
 
+import java.io.File;
+
 public class Main {
 
     static String jsonData;
@@ -11,18 +13,17 @@ public class Main {
         url = config.getURL("url");
         URLData urlData = new URLData();
         jsonData = urlData.getDataFromURL(url);
-
         JSONToCSVWriter jsonToCSVWriter = new JSONToCSVWriter();
         jsonToCSVWriter.getDataByKey(jsonData);
         jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
-        CSVUpdater csvUpdater = new CSVUpdater();
 
         Runnable runnable = () -> {
             while (true) {
                 jsonData = urlData.getDataFromURL(url);
                 try {
                     System.out.println(jsonData);
-                    csvUpdater.updateDataInCSV(jsonData, "steamData.csv");
+                    jsonToCSVWriter.getDataByKey(jsonData);
+                    jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
