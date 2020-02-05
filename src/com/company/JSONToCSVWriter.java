@@ -20,7 +20,6 @@ public class JSONToCSVWriter {
         item.setMedian_price((String) jParser.get("median_price"));
     }
     void writeDataFromURLToCSV(String csv) throws Exception {
-
         String [] urlData = {
                 item.getSuccess().toString(),
                 item.getLowest_price(),

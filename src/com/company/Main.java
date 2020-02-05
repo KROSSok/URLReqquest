@@ -2,11 +2,12 @@ package com.company;
 
 public class Main {
 
-    static String jsonData;
-    static String url;
+
     private static final long TIME_INTERVAL = 60000;
 
     public static void main(String[] args) throws Exception {
+        String jsonData;
+        String url;
         Config config = new Config();
         url = config.getURL("url");
         URLData urlData = new URLData();
@@ -17,10 +18,9 @@ public class Main {
 
         Runnable runnable = () -> {
             while (true) {
-                jsonData = urlData.getDataFromURL(url);
                 try {
-                    System.out.println(jsonData);
-                    jsonToCSVWriter.getDataByKey(jsonData);
+                    jsonToCSVWriter.getDataByKey(urlData.getDataFromURL(url));
+                    System.out.println(urlData.getDataFromURL(url));
                     jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
                 } catch (Exception e) {
                     e.printStackTrace();
