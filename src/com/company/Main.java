@@ -11,7 +11,6 @@ public class Main {
         url = config.getURL("url");
         URLData urlData = new URLData();
         jsonData = urlData.getDataFromURL(url);
-        System.out.println(jsonData);
         JSONToCSVWriter jsonToCSVWriter = new JSONToCSVWriter();
         jsonToCSVWriter.getDataByKey(jsonData);
         jsonToCSVWriter.writeDataFromURLToCSV("steamData.csv");
