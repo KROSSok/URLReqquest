@@ -2,10 +2,8 @@ package com.company;
 import com.opencsv.CSVWriter;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-
 import java.io.File;
 import java.io.FileWriter;
-import java.util.Date;
 
 public class JSONToCSVWriter {
 

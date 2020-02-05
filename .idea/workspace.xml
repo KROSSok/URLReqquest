@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0d507e1-2244-4b06-be47-4094efa3778a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/JSONToCSVWriter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/JSONToCSVWriter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/CSVUpdater.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/JSONToCSVWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/JSONToCSVWriter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
