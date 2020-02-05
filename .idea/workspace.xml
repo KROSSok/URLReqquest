@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f0d507e1-2244-4b06-be47-4094efa3778a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/CSVUpdater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/JSONToCSVWriter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/URLData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/URLRequest/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/steamData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/steamData.csv" afterDir="false" />
-    </list>
+    <list default="true" id="f0d507e1-2244-4b06-be47-4094efa3778a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +25,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea/libraries/json-simple-1.1.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../URLReqquest-dev" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />

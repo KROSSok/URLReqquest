@@ -23,6 +23,7 @@ public class Main {
                 // ------- code for task to run
                 jsonData = urlData.getDataFromURL(url);
                 try {
+                    System.out.println(jsonData);
                     csvUpdater.updateDataInCSV(Main.jsonData, "steamData.csv");
                 } catch (Exception e) {
                     e.printStackTrace();
